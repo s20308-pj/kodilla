@@ -1,0 +1,27 @@
+Stwórz hierarchię klas:
+
+Animal (atrybuty: food typu int, oraz water typu int, a także name typu String)
+
+Klasa Animal posiada konstruktor, który inicjuje food na 1000 oraz water na 1000, a jako parametr przyjmuje nazwę zwierzęcia.
+
+Klasa Animal posiada metodę feed (czyli nakarm), która zmniejsza ilość jedzenia o 200 oraz ilość wody o 100.
+
+Klasa Animal posiada metodę addFood(), która zwiększa ilość jedzenia i wody o 500.
+
+dziedziczące z Animal klasy: Elephant oraz Tiger
+
+każda z klas Elephant oraz Tiger definiuje swoją metodę feed (czyli nakarm), która nadpisuje metodę feed() z klasy Animal.
+
+Dla klasy Elephant metoda feed odejmuje 400 pokarmu i 300 wody przy każdym karmieniu.
+
+Dla klasy Tiger metoda feed odejmuje 200 pokarmu i 80 wody przy każdym karmieniu.
+Klasa Animal posiada metodę toString, która wyświetla ile zostało pokarmu i wody oraz nazwę zwierzęcia.
+Klasy Elephant oraz Tiger posiadają metodę toString, która wyświelta:
+    a) to co wyświetla klasa Animal (trzeba wywołać super())
+    b) ilość skonsumowanego dotychczas pożywienia oraz wody - trzeba to gdzieś zapamiętać
+W programie głównym utwórz po jednym egzemplarzu klas Elephant oraz Tiger.
+Następnie nakarm zwierzęta kilka razy oraz kilka razy uzupełnij im jedzenie i picie.
+Po każdej operacji wyświetl komunikat co zrobiłeś (np. "Dodałem jedzenie +500 oraz wodę +500"),
+a także aktualny stan zwierzęcia (np. "Słoń: jedzenie: 1700, woda: 600").
+Przy każdym karmieniu wyświetl informację o tym, że zwierzę nakarmiono (np. "Słoń - nakarmiono: jedzenie: 400, woda: 300.
+Wyświetle tez stan zwierzęcia).
